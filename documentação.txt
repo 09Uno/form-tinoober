@@ -1,0 +1,34 @@
+1) Abertura da OS name ="os"
+2) Previsão de finzalizacção name = "final"
+3) status da OS name ="status"
+        value = "aberta"/"fechada"  
+4) nome do cliente: value "cliente"
+5) Telefone: name "telefone"
+6) email: name "email"
+7) aparelho: name "aparelho"
+8) tipo: name"tipo"
+    value "notebook" / "desktop"
+9) bateria: name "bateria" 
+    value: "sim / nao
+10) carregador: name carregador
+    value: "sim / nao
+11)hd: name hd
+    value: "sim / nao
+12) memoria: name: memoria
+    value "sim" / "nao"
+13) PRoblema descrito pelo cliente: name"problema"
+14)marcas De Uso: value="marcaDeUso"
+    value "sim" / "nao"
+15)parafusos: name: "parafusos"
+    value "sim" / "nao"
+16)carcaca: name="carcaca"
+    value "sim" / "nao"
+17)Maquina liga: name="liga" 
+    value "sim" / "nao"
+18)problema confere com o descrito? : name "confere"
+    value "sim" / "nao"
+19) Ao analisar os dados verificou-se que: name"sobanalise"
+20) Tela : name "tela"
+    value: "realizado" / "nao"
+
+

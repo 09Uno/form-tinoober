@@ -16,6 +16,9 @@
             <div class="ordermDeServico">Ordem de serviço n° <br /> Técnico </div>
             <link href="tinoober.com.br" class="site">tinoober.com.br</link>
         </div>
+        <div id="tinooberBaner">
+
+        </div>
     </header>
 
     <main class="containerMain">
@@ -23,20 +26,67 @@
 
             <div class="containerCenter">
                 <div>
-                    <div class="formLinha">
-                        Abertura da OS<input type="date" name="os" />
-                        Finalização Prevista<input type="date" name="final" />
-                        Status da OS<select name="status">
-                            <Option value="aberta">Aberta</Option>
-                            <Option value="fechada">Fechada</Option>
-                        </select>
-                    </div>
-                    <div class="formLinha"> Nome do Cliente: <input name="cliente" /> </div>
-                    <div class="formLinha"> Telefone<input type="text" name="telefone" />email<input name="email"
-                            type="email" /></div>
+                    <h2>ORDEM DE SERVIÇO</h2>
+                    <section class="containerSection">
+                        <table class="">
+
+                            <tr class="osDatas">
+                                <td class="osDatas2">
+                                    <p class="font">ABERTURA DA OS*</p>
+                                </td>
+                                <td class="osDatas2">
+                                    <p class="font">FINALIZAÇÃO PREVISTA*</0>
+                                </td class="osDatas2">
+                                <td>
+                                    <p class="font">STATUS DA OS*</p>
+                                </td>
+                            </tr>
+
+                            <tr class="osDatas">
+                                <td class="osDatas2">
+                                    <input type="date" name="os" />
+                                </td>
+                                <td class="osDatas2">
+                                    <input type="date" name="final" />
+                                </td>
+                                <td class="osDatas2">
+                                    <select name="status">
+                                        <Option value="aberta">ABERTA</Option>
+                                        <Option value="fechada">FECHADA</Option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+                            <tr class="osDatas">
+                                <td class="osDatas2">
+                                    <p class="font">TELEFONE*</p>
+                                </td>
+                                <td class="osDatas2">
+                                    <p class="font">EMAIL</p>
+                                </td>
+                                <td class="osDatas2">
+                                    <p class="font">NOME DO CLIENTE*</p>
+                                </td>
+                            </tr>
+
+                            <tr class="osDatas">
+                                <td class="osDatas2">
+                                    <input type="text" name="telefone" />
+                                </td>
+                                <td class="osDatas2">
+                                    <input name="email" type="email" />
+                                </td>
+                                <td class="osDatas2">
+                                    <input name="cliente" />
+                                </td>
+                            </tr>
                 </div>
-                <div>
-                    <h2>Apresentação</h2>
+                </table>
+            </div>
+            <div>
+                <h2>APRESENTAÇÃO</h2>
+                <section class="containerSection">
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium,
@@ -47,327 +97,460 @@
                         quisquam
                         est, qui dolorem ipsum quia dolor sit amet, consectetu
                     </p>
-                    <div class="formLinha"> Aparelho<input name="aparelho" type="text" /></div>
-                    <div class="formLinha">
-                        tipo<select name="tipo">
-                            <option value="notebook">Notebook</option>
-                            <option value="desktop">Desktop</option>
+                </section>
+                <h2>EQUIPAMENTO</h2>
+                <section class="containerSection">
+                    <section class="sectionEquipamento">
+                        <div>
+                            <div class="aparelhos">
+
+                                <p class="font">APARELHO</p>
+                                <input name="aparelho" type="text" />
+                            </div>
+
+                            <div class="aparelhos">
+                                <p class="font">TIPO</p>
+                                <select name="tipo">
+                                    <option value="notebook">NOTEBOOK</option>
+                                    <option value="desktop">DESKTOP</option>
+                                </select>
+                            </div>
+
+                            <div class="aparelhos">
+                                <p class="font">BATERIA</p>
+                                <select name="bateria">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="aparelhos">
+                                <p class="font">CARREGADOR</p>
+                                <select name="carregador">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </div>
+
+                            <div class="aparelhos">
+                                <p class="font">HD</p>
+                                <select name="hd">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </div>
+
+                            <div class="aparelhos">
+                                <p class="font">MEMÓRIA</p>
+                                <select name="memoria">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <h2>PROBLEMA DESCRITO PELO CLIENTE</h2>
+                <section class="problemasApresentados">
+                    <section class="containerSection">
+                        <textarea id="problemaCliente" name="problema"></textarea>
+                    </section>
+
+                    <h2>IMPRESSÃO INICIAL</h2>
+
+                    <section class="containerSection">
+
+                        <p class="font">MARCAS DE USO</p>
+                        <select name="marcaDeUso">
+                            <option value="sim">SIM</option>
+                            <option value="nao">NÃO</option>
                         </select>
-                        Bateria<select name="bateria">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
+                        <p class="font">PARAFUSOS</p>
+                        <select name="parafusos">
+                            <option value="sim">SIM</option>
+                            <option value="nao">NÃO</option>
                         </select>
-                        Carregador<select name="carregador">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
+                        <p class="font">CARCAÇA</p>
+                        <select name="carcaca">
+                            <option value="sim">SIM</option>
+                            <option value="nao">NÃO</option>
                         </select>
-                        hd<select name="hd">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                        Memória<select name="memoria">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                    </div>
-                    <h2>Problema descrito pelo cliente</h2>
-                    <textarea name="problema"></textarea>
-                    <h2>Impressão Inicial</h2>
-                    <div class="formLinha">
-                        Marcas de uso<select name="marcaDeUso">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                        PArafusos<select name="parafusos">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                        Carcaça<select name="carcaca">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                        Máquina liga<select name="liga">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                    </div>
-                    <div class="formLinha">
-                        Problema apresentado pelo cliente confere com o apresentado na primeira análise
-                        <select name="confere">
-                            <option value="sim">Sim</option>
+
+                        <p class="font">MÁQUINA LIGADA</p>
+                        <select name="liga">
+                            <option value="sim">SIM</option>
                             <option value="nao">Não</option>
                         </select>
 
-                    </div>
+                        <div class="">
+                            <p class="font">PROBLEMA APRESENTADO PELO CLIENTE CONFERE COM O APRESENTADO NA PRIMEIRA
+                                ANALISE? </p>
+                            <select name="confere">
+                                <option value="sim">SIM</option>
+                                <option value="nao">NÃO</option>
+                            </select>
+                        </div>
+                    </section>
+                </section>
 
-                    <h2>Problema descrito pelo cliente</h2>
-                    <div class="formLinha">
-                        Ao analisar o Notebook notou-se que: <input name="sobanalise" type="text" />
-                    </div>
+                <h2>PROBLEMA DESCRITO PELO CLIENTE</h2>
 
-                    <div>
-                        <h2>CheckList de Periféricos</h2>
+                <section class="containerSection">
+                    <div class="">
+                        <p class="font">AO ANALISAR O NOTEBOOK NOUTE-SE QUE:</p>
+                        <input name="sobanalise" type="text" />
+                    </div>
+                </section>
+
+                <h2>CHECKLIST DE PERIFÉRICOS</h2>
+                <section class="containerSection">
+                    <table>
+                        <tr class="formLinha2">
+                            <td>
+                                <p class="font">NOME</p>
+                            </td>
+                            <td>
+                                <p class="font">STATUS</p>
+                            </td>
+                            <td>
+                                <p class="font">OBSERVAÇÕES</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <P class="font">TELA</P>
+                            </td>
+
+                            <td>
+                                <select name="telaStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+
+                                </select>
+                            </td>
+                            <td><input type="text" name="telaObs"> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">TECLADO</p>
+                            </td>
+                            <td>
+                                <select name="tecladoStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="tecladoObs"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">BATERIA</p>
+                            </td>
+                            <td>
+                                <select name="bateriaStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="bateriaObs"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">CARCAÇA</p>
+                            </td>
+                            <td>
+                                <select name="carcacaStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="carcacaObs"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">FONTE</p>
+                            </td>
+                            <td>
+                                <select name="fonteStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="fonteObs"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">ARMAZENAMENTO</p>
+                            </td>
+                            <td>
+                                <select name="armazenamentoStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </td>
+                            <td><input name="armazenamentoObs" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">MEMÓRIA RAM</p>
+                            </td>
+                            <td>
+                                <select name="ramStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="ramObs"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">Processador</p>
+                            </td>
+                            <td><select name="processadorStatus">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select></td>
+                            <td><input type="text" name="processadorObs"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">DRIVER CD/DVD</p>
+                            </td>
+                            <td><select name="cdStatus">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select></td>
+                            <td><input type="text" name="cdObs"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font">PLACA WIRELESS</p>
+                            </td>
+                            <td>
+                                <select name="wireless">
+                                    <option value="sim">SIM</option>
+                                    <option value="nao">NÃO</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="wireless"></td>
+                        </tr>
+
+                    </table>
+                </section>
+
+
+                <div>
+                    <h2>
+                        CHECKLIST DE PROGRAMAS
+                    </h2>
+
+                    <section class="containerSection">
 
                         <table>
-                            <tr class="formLinha2">
-                                <td>Nome</td>
-                                <td>Status</td>
-                                <td>Observações</td>
-                            </tr>
                             <tr>
-                                <td>Tela</td>
-
                                 <td>
-                                    <select name="telaStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-
-                                    </select>
+                                    <p class="font">NOME</p>
                                 </td>
-                                <td><input type="text" name="telaObs"> </td>
-                            </tr>
-                            <tr>
-                                <td>Teclado</td>
                                 <td>
-                                    <select name="tecladoStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-                                    </select>
+                                    <p class="font">STATUS</p>
                                 </td>
-                                <td><input type="text" name="tecladoObs"></td>
-                            </tr>
-                            <tr>
-                                <td>Bateria</td>
                                 <td>
-                                    <select name="bateriaStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-                                    </select>
+                                    <p class="font">OBSERVAÇÕES</p>
                                 </td>
-                                <td><input type="text" name="bateriaObs"></td>
                             </tr>
                             <tr>
-                                <td>Carcaça</td>
                                 <td>
-                                    <select name="carcacaStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-                                    </select>
+                                    <p class="font">COMPACTADOR DE ARQUIVOS</p>
                                 </td>
-                                <td><input type="text" name="carcacaObs"></td>
-                            </tr>
-                            <tr>
-                                <td>Fonte</td>
-                                <td>
-                                    <select name="fonteStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" name="fonteObs"></td>
-                            </tr>
-                            <tr>
-                                <td>Armazenamento</td>
-                                <td>
-                                    <select name="armazenamentoStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-                                    </select>
-                                </td>
-                                <td><input name="armazenamentoObs" type="text"></td>
-                            </tr>
-                            <tr>
-                                <td>Memória RAM</td>
-                                <td>
-                                    <select name="ramStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" name="ramObs"></td>
-                            </tr>
-                            <tr>
-                                <td>Processador</td>
-                                <td><select name="processadorStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="processadorObs"></td>
-                            </tr>
-                            <tr>
-                                <td>Driver CD/DVD</td>
-                                <td><select name="cdStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="cdObs"></td>
-                            </tr>
-                            <tr>
-                                <td>Placa Wireless</td>
-                                <td><select name="wireless">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="wireless"></td>
-                            </tr>
-
-                        </table>
-                    </div>
-
-
-                    <div>
-                        <h2>CheckList de Programas</h2>
-
-                        <table>
-                            <tr>
-                                <td>Nome</td>
-                                <td>Status</td>
-                                <td>Observações</td>
-                            </tr>
-                            <tr>
-                                <td>Comp Arquivos</td>
                                 <td>
                                     <select name="compArquivosStatus">
-                                        <option value="sim">Sim</option>
-                                        <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="compArquivosObs" ></td>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" name="compArquivosObs"></td>
                             </tr>
                             <tr>
-                                <td>Leitor PDF</td>
+                                <td>
+                                    <p class="font">LEITOR PDF</p>
+                                </td>
                                 <td><select name="leitorDePdfStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
                                     </select></td>
                                 <td><input type="text" name="leitorDePdfObs"> </td>
                             </tr>
                             <tr>
-                                <td>Antivirus</td>
-                                <td><select name="antivirusStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
+                                <td>
+                                    <p class="font">ANTIVIRUS</p>
+                                </td>
+                                <td>
+                                    <select name="antivirusStatus">
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
+                                    </select>
+                                </td>
                                 <td><input type="text" name="antivirusObs"></td>
                             </tr>
                             <tr>
-                                <td>Navegadores</td>
-                                <td><select name="navegadorStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="navegadorObs"></td>
+                                <td>
+                                    <p class="font">NAVEGADORES</p>
+                                </td>
+                                <td>
+                                    <select name="navegadorStatus">
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="navegadorObs">
+                                </td>
                             </tr>
                             <tr>
-                                <td>Limpa registros</td>
-                                <td><select name="limpaRegistroStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="limpaRegistroObs"> </td>
+                                <td>
+                                    <p class="font">LIMPA REGISTROS</p>
+                                </td>
+                                <td>
+                                    <select name="limpaRegistroStatus">
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="limpaRegistroObs">
+                                </td>
                             </tr>
                             <tr>
-                                <td>Acesso Remoto</td>
-                                <td><select name="acessoRemotoStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="acessoRemotoObs"></td>
+                                <td>
+                                    <p class="font">ACESSO REMOTO</p>
+                                </td>
+                                <td>
+                                    <select name="acessoRemotoStatus">
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="acessoRemotoObs">
+                                </td>
                             </tr>
                             <tr>
-                                <td>Pacote office</td>
-                                <td><select name="officeStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
-                                <td><input type="text" name="officeObs"></td>
+                                <td>
+                                    <p class="font">PACOTE OFFICE</p>
+                                </td>
+                                <td>
+                                    <select name="officeStatus">
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="officeObs">
+                                </td>
                             </tr>
 
                         </table>
-                    </div>
+                </div>
 
-                    <p>
-                        ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sun
-                    </p>
+                <p>
+                    ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sun
+                </p>
 
-                    <div>
-                        <h2>CheckList de Drivers</h2>
+                <div>
+                    <h2>CHECKLIST DE DRIVERS</h2>
+                    <section class="containerSection">
 
                         <table>
                             <tr>
-                                <td>Nome</td>
-                                <td>Status</td>
-                                <td>Observações</td>
+                                <td>
+                                    <p class="font">NOME</p>
+                                </td>
+                                <td>
+                                    <p class="font">STATUS</p>
+                                </td>
+                                <td>
+                                    <p class="font">OBSERVAÇÕES</p>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Audio</td>
+                                <td class="font">AUDIO</td>
                                 <td><select name="audioStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
-                                    </select></td>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
+                                    </select>
+                                </td>
                                 <td><input type="text" name="audioObs"></td>
                             </tr>
                             <tr>
-                                <td>Vídeo</td>
+                                <td class="font">VÍDEO</td>
                                 <td><select name="videoStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
                                     </select></td>
                                 <td><input type="text" name="videoObs"></td>
                             </tr>
                             <tr>
-                                <td>Chipset</td>
+                                <td class="font">CHIPSET</td>
                                 <td><select name="chipSet">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
                                     </select></td>
                                 <td><input type="text" name="chipSetObs"></td>
                             </tr>
                             <tr>
-                                <td>BlueThooth</td>
+                                <td class="font">BLUETHOOTH</td>
                                 <td><select name="bluethoothStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
                                     </select></td>
                                 <td><input type="text" name="bluethoothObs"></td>
                             </tr>
                             <tr>
-                                <td>Wireless</td>
+                                <td class="font">WIRELESS</td>
                                 <td><select name="wirelessStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
                                     </select></td>
                                 <td><input type="text" name="wirelessObs"></td>
 
                             </tr>
                             <tr>
-                                <td>Webcam</td>
+                                <td class="font">WEBCAM</td>
                                 <td><select name="webcamStatus">
-                                    <option value="sim">Sim</option>
-                                    <option value="nao">Não</option>
+                                        <option value="sim">SIM</option>
+                                        <option value="nao">NÃO</option>
                                     </select></td>
                                 <td><input type="text" name="webcamObs"></td>
                             </tr>
 
 
                         </table>
-                        <h2>Serviços</h2>
+                    </section>
+                    <h2>SERVIÇOS</h2>
+                    <section class="containerSection">
 
                         <table>
                             <tr>
-                                <td>Nome</td>
-                                <td>Status</td>
-                                <td>Descrição</td>
+                                <td class="font">NOME</td>
+                                <td class="font">STATUS</td>
+                                <td class="font">DESCRIÇÃO</td>
                             </tr>
                             <tr>
                                 <td><input name="servicoNome1" /></td>
-                                <td><select name="status1">
-                                        <option value="realizado">Realizado</option>
-                                        <option value="nao"> Não Realizado</option>
+                                <td>
+                                    <select name="status1">
+                                        <option value="realizado">REALIZADO</option>
+                                        <option value="nao"> NÃO REALIZADO</option>
 
-                                    </select></td>
-                                <td><input type="text" name="descricaoServico1"></td>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" name="descricaoServico1">
+                                </td>
                             </tr>
                             <tr>
                                 <td><input name="servicoNome2" /></td>
@@ -376,7 +559,9 @@
                                         <option value="nao"> Não Realizado</option>
 
                                     </select></td>
-                                <td><input type="text" name="descricaoServico2"></td>
+                                <td>
+                                    <input type="text" name="descricaoServico2">
+                                </td>
                             </tr>
                             <tr>
                                 <td><input name="servicoNome3" /></td>
@@ -405,91 +590,96 @@
                                     </select></td>
                                 <td><input type="text" name="descricaoServico5"></td>
                             </tr>
-                            
-                       
+
+
                         </table>
-
-                        <h2>Prazos</h2>
-
+                    </section>
+                    <h2>PRAZOS</h2>
+                    <section class="containerSection">
                         <table>
-                            <tr>
-                                <td>Nome</td>
-                                <td>Status</td>
-                                <td>Descrição</td>
+                            <tr class="font">
+                                <td class="font">NOME</td>
+                                <td class="font">STATUS</td>
+                                <td class="font">DESCRIÇÃO</td>
                             </tr>
                             <tr>
-                                <td><input name="PrazoNome1"/></td>
+                                <td><input name="PrazoNome1" /></td>
                                 <td><select name="prazo1">
-                                    <option value="realizado">Realizado</option>
-                                    <option value="nao"> Não Realizado</option>
+                                        <option value="realizado">Realizado</option>
+                                        <option value="nao"> Não Realizado</option>
                                     </select></td>
                                 <td><input type="text " name="prazoDescricao1"></td>
                             </tr>
-                            
+
                             <tr>
-                                <td><input name="PrazoNome2"/></td>
+                                <td><input name="PrazoNome2" /></td>
                                 <td><select name="prazo2">
-                                    <option value="realizado">Realizado</option>
-                                    <option value="nao"> Não Realizado</option>
+                                        <option value="realizado">Realizado</option>
+                                        <option value="nao"> Não Realizado</option>
                                     </select></td>
                                 <td><input type="text " name="prazoDescricao2"></td>
                             </tr>
-                            
+
                             <tr>
-                                <td><input name="PrazoNome3"/></td>
+                                <td><input name="PrazoNome3" /></td>
                                 <td><select name="prazo3">
-                                    <option value="realizado">Realizado</option>
-                                    <option value="nao"> Não Realizado</option>
+                                        <option value="realizado">Realizado</option>
+                                        <option value="nao"> Não Realizado</option>
                                     </select></td>
                                 <td><input type="text " name="prazoDescricao3"></td>
                             </tr>
-                            
+
                             <tr>
-                                <td><input name="PrazoNome4"/></td>
+                                <td><input name="PrazoNome4" /></td>
                                 <td><select name="prazo4">
-                                    <option value="realizado">Realizado</option>
-                                    <option value="nao"> Não Realizado</option>
+                                        <option value="realizado">Realizado</option>
+                                        <option value="nao"> Não Realizado</option>
                                     </select></td>
                                 <td><input type="text " name="prazoDescricao4"></td>
                             </tr>
-                            
-                            <tr>
-                                <td><input name="PrazoNome5"/></td>
-                                <td><select name="prazo5">
-                                    <option value="realizado">Realizado</option>
-                                    <option value="nao"> Não Realizado</option>
-                                    </select></td>
-                                <td><input type="text " name="prazoDescricao6"></td>
-                            </tr>
-                            
-                            <tr>
-                                <td><input name="PrazoNome6"/></td>
-                                <td><select name="prazo6">
-                                    <option value="realizado">Realizado</option>
-                                    <option value="nao"> Não Realizado</option>
-                                    </select></td>
-                                <td><input type="text " name="prazoDescricao6"></td>
-                            </tr>
-                            
-                           
-                        </table>
-                        <div>
-                            <p>Valor do serviço</p><input name="valorServico"/>
-                            <p>Formas de pagamento</p><select name="pagamento">
-                                <Option value="transferencia">Transferência</Option>
-                                <Option value="dinheiro">Dinheiro</Option>
 
-                            </select>
-                        </div>
-                        <div>
-                            <h2>Considerações</h2>
-                            <textarea name="consideracoes">
+                            <tr>
+                                <td><input name="PrazoNome5" /></td>
+                                <td><select name="prazo5">
+                                        <option value="realizado">Realizado</option>
+                                        <option value="nao"> Não Realizado</option>
+                                    </select></td>
+                                <td><input type="text " name="prazoDescricao6"></td>
+                            </tr>
+
+                            <tr>
+                                <td><input name="PrazoNome6" /></td>
+                                <td><select name="prazo6">
+                                        <option value="realizado">Realizado</option>
+                                        <option value="nao"> Não Realizado</option>
+                                    </select></td>
+                                <td><input type="text " name="prazoDescricao6"></td>
+                            </tr>
+
+
+                        </table>
+                    </section>
+
+                    <h2>VALOR DO SERVIÇO</h2>
+                    <section class="containerSection">
+
+                        <input name="valorServico" />
+                        <p class="font">FORMAS DE PAGAMENTO</p><select name="pagamento">
+                            <Option value="transferencia">TRANSFERÊNCIA</Option>
+                            <Option value="dinheiro">DINHEIRO</Option>
+
+                        </select>
+                    </section>
+                    <h2>CONSIDERAÇÕES</h2>
+                    <section class="containerSection">
+
+                        <textarea id="consideracoes" name="consideracoes">
 
                         </textarea>
 
-                        </div>
-                    </div>
+                    </section>
                 </div>
+            </div>
             </div>
         </form>
     </main>
